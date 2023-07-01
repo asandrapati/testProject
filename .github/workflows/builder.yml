@@ -1,11 +1,12 @@
-name: Build and scan
-on: 
-  pushes:
-  pull_requests:
+name: Build and Scan
+on:
+  pushes: test
+  pull_requests: tests
 jobs:
   build:
-    run-on: ubuntu-20.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Check out code
         uses: actions/checkout@v2
         
+
